@@ -1,0 +1,61 @@
+//mobile first
+$mob: '320px';
+$mobPlus: '470px';
+$palm: '530px';
+$tablet: '720px';
+$laptop: '1024px';
+$desktop: '1280px';
+
+$color-brow: #7E574D;
+$color-grey: #838383;
+$color-cream: #FBF6F0;
+$color-pink: #D98686;
+$color-dark: rgba(0, 0, 0, 0.7);
+$color-white: rgb(255, 255, 255);
+
+$font-size-12: 12px;
+$font-size-14: 14px;
+$font-size-16: 16px;
+$font-size-18: 18px;
+$font-size-20: 20px;
+$font-size-25: 25px;
+$font-size-28: 28px;
+$font-size-35: 35px;
+$font-size-46: 46px;
+$font-size-80: 80px;
+$font-size-89: 89px;
+
+//@mixin text {
+//  color: $default-black;
+//  font-family: 'Popins';
+//  font-size: 14px;
+//  font-weight: normal;
+//}
+
+@mixin mobile-hidden {
+  display: none;
+  @media screen and (min-width: $width-tablet) {
+    display: block;
+  }
+}
+@mixin mobile-show {
+  @media screen and (min-width: $width-tablet) {
+    display: none;
+  }
+}
+
+@font-face {
+  font-family: "Orpheus";
+  src: url("fonts/Orpheus_Pro.otf");
+}
+
+@font-face {
+  font-family: "Orpheus";
+  src: url("fonts/Orpheus_Pro_italic.otf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Popins";
+  src: url("fonts/Poppins-Regular.ttf");
+}
